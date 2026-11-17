@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Submission Admin | Tumi Medical Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <div class="logo-image">
+                <img src="images/tumi logo.png" alt="Tumi Medical Institute logo">
+            </div>
+            <div class="logo-text">
+                <p>Tumi Medical Institute</p>
+            </div>
+        </div>
+        <a class="page-button" href="index.html">View website</a>
+    </nav>
+    <main class="page-section admin-page">
+        <div class="page-section-heading">
+            <h1>Enquiries and application requests</h1>
+            <p>Use the administrator password configured on the website server. Keep this page private and use it only over HTTPS on a public deployment.</p>
+        </div>
+        <form class="admin-login" id="admin-login-form">
+            <div class="form-field">
+                <label for="admin-password">Administrator password</label>
+                <input id="admin-password" type="password" autocomplete="current-password" required>
+            </div>
+            <button class="page-button" type="submit">Open submissions</button>
+            <button class="page-button page-button-light" id="admin-logout" type="button" hidden>Lock submissions</button>
+        </form>
+        <p class="contact-form-note admin-status" id="admin-status" role="status" aria-live="polite"></p>
+        <section class="admin-results" id="admin-results" hidden>
+            <h2 id="admin-count"></h2>
+            <div class="admin-table-wrap">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Submitted</th>
+                            <th>Type</th>
+                            <th>Name and contact</th>
+                            <th>Details</th>
+                            <th>Message</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-submissions"></tbody>
+                </table>
+            </div>
+            <button class="page-button" id="admin-load-more" type="button" hidden>Load more</button>
+        </section>
+    </main>
+    <footer>
+        <div class="quick">
+            <h3>Tumi Medical Institute</h3>
+            <a href="privacy.html">Privacy notice</a>
+        </div>
+        <div class="quick">
+            <a href="contact.html">Contact the school</a>
+            <a href="index.html">Return to the website</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about nursing and midwifery programmes, application preparation, and admissions at Tumi Medical Institute.">
+    <title>Admissions | Tumi Medical Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="admissions-page">
+    <nav>
+        <div class="logo-container">
+            <div class="logo-image">
+                <img src="images/tumi logo.png" alt="Tumi Medical Institute logo">
+            </div>
+            <div class="logo-text">
+                <p>Tumi Medical Institute</p>
+            </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle-icon" aria-hidden="true"></span>
+            <span>Menu</span>
+        </button>
+        <div class="links" id="primary-navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html" aria-current="page">Admissions</a>
+            <a href="clinical Training.html">Clinical Training</a>
+            <a href="Facilities.html">Facilities</a>
+            <a href="news&updates.html">News &amp; Updates</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="admission-hero">
+            <div class="admission-hero-content">
+                <h1>Begin your journey in healthcare</h1>
+                <p>Take the next step toward a career in nursing or midwifery at Tumi Medical Institute.</p>
+                <div class="admission-actions">
+                    <a class="admission-button" href="#programmes">Explore programmes</a>
+                    <a class="admission-button admission-button-light" href="#application-steps">How to apply</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-section admission-programmes" id="programmes">
+            <h2>Programmes available</h2>
+            <p class="admission-section-intro">Choose a programme that fits your background and career goals. Confirm current availability and entry requirements with the school before applying.</p>
+            <div class="admission-programme-grid">
+                <article class="admission-card">
+                    <span class="admission-label">Certificate</span>
+                    <h3>Certificate in Nursing</h3>
+                    <p>Duration: 2.5 years</p>
+                </article>
+                <article class="admission-card">
+                    <span class="admission-label">Certificate</span>
+                    <h3>Certificate in Midwifery</h3>
+                    <p>Duration: 2 years</p>
+                </article>
+                <article class="admission-card">
+                    <span class="admission-label">Diploma</span>
+                    <h3>Diploma in Midwifery Extension</h3>
+                    <p>Duration: 1.5 years</p>
+                </article>
+                <article class="admission-card">
+                    <span class="admission-label">Diploma</span>
+                    <h3>Diploma in Nursing Extension</h3>
+                    <p>Duration: 1.5 years</p>
+                </article>
+            </div>
+            <p class="admission-more-link"><a href="academics.html">View academic programmes</a></p>
+        </section>
+
+        <section class="admission-section admission-process" id="application-steps">
+            <h2>Application process</h2>
+            <p class="admission-section-intro">Our administration team can guide you through the current intake and application requirements.</p>
+            <div class="admission-step-grid">
+                <article class="admission-step">
+                    <span class="admission-step-number">1</span>
+                    <h3>Choose a programme</h3>
+                    <p>Review the available programmes and identify the one that matches your training and career plans.</p>
+                </article>
+                <article class="admission-step">
+                    <span class="admission-step-number">2</span>
+                    <h3>Confirm requirements</h3>
+                    <p>Ask the school about the entry criteria, required documents, application form, fees, and intake dates.</p>
+                </article>
+                <article class="admission-step">
+                    <span class="admission-step-number">3</span>
+                    <h3>Prepare your application</h3>
+                    <p>Gather the requested documents and follow the submission instructions provided by the administration team.</p>
+                </article>
+                <article class="admission-step">
+                    <span class="admission-step-number">4</span>
+                    <h3>Follow up</h3>
+                    <p>Check with the school about your application status and any next steps for the selected intake.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="admission-section admission-application" id="application-request">
+            <h2>Send an application request</h2>
+            <p class="admission-section-intro">Share your details and the school can follow up about the selected programme. This request is not a final admission decision or a substitute for official application documents.</p>
+            <form class="contact-form application-form" id="application-form">
+                <div class="form-honeypot" aria-hidden="true">
+                    <label for="application-website">Leave this field empty</label>
+                    <input id="application-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+                <div class="form-field">
+                    <label for="application-name">Full name</label>
+                    <input id="application-name" name="full_name" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="application-contact">Phone or email</label>
+                    <input id="application-contact" name="contact" type="text" autocomplete="on" required>
+                </div>
+                <div class="form-field">
+                    <label for="application-programme">Programme</label>
+                    <select id="application-programme" name="programme" required>
+                        <option value="">Choose a programme</option>
+                        <option value="Certificate in Nursing">Certificate in Nursing</option>
+                        <option value="Certificate in Midwifery">Certificate in Midwifery</option>
+                        <option value="Diploma in Midwifery Extension">Diploma in Midwifery Extension</option>
+                        <option value="Diploma in Nursing Extension">Diploma in Nursing Extension</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="application-qualification">Previous education or qualification</label>
+                    <textarea id="application-qualification" name="qualification" rows="4" required></textarea>
+                </div>
+                <div class="form-field">
+                    <label for="application-message">Anything else you would like the school to know? (optional)</label>
+                    <textarea id="application-message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-field form-consent">
+                    <label for="application-consent">
+                        <input id="application-consent" name="consent" type="checkbox" required>
+                        I agree that the school may store these details to follow up on my application request.
+                    </label>
+                    <a class="text-link" href="privacy.html">Read the privacy notice</a>
+                </div>
+                <button class="page-button" type="submit">Save application request</button>
+                <p class="contact-form-note" id="application-form-note" role="status" aria-live="polite">Do not include identity numbers or send document scans in this form. After saving, you may choose to contact the school on WhatsApp.</p>
+                <a class="page-button page-button-light whatsapp-follow-up" id="application-whatsapp-link" href="#" target="_blank" rel="noopener" hidden>Continue to WhatsApp</a>
+            </form>
+        </section>
+
+        <section class="admission-section admission-checklist" id="documents">
+            <div class="admission-checklist-copy">
+                <h2>What to prepare</h2>
+                <p>Document requirements can differ by programme and intake. Contact the school to confirm the official checklist before submitting an application.</p>
+            </div>
+            <ul>
+                <li>Academic certificates or result documents</li>
+                <li>Identification document</li>
+                <li>Recent passport-size photographs</li>
+                <li>Completed application form, as directed by the school</li>
+            </ul>
+        </section>
+
+        <section class="admission-help" id="admissions-help">
+            <h2>Questions about applying?</h2>
+            <p>Contact the school administration for current intake dates, programme entry requirements, application forms, and the latest fee structure.</p>
+            <a class="admission-button" href="#application-request">Send an application request</a>
+            <a class="admission-button admission-button-light" href="contact.html">Contact the school</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="quick">
+            <img src="images/tumi logo.png" alt="Tumi Medical Institute logo">
+            <h3>Tumi Medical Institute</h3>
+        </div>
+        <div class="quick">
+            <h2>Quick Links</h2>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="clinical Training.html">Clinical Training</a>
+            <a href="Facilities.html">Facilities</a>
+            <a href="news&updates.html">News &amp; Updates</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy notice</a>
+        </div>
+        <div class="quick">
+            <h3>Find us</h3>
+            <h4>Ishaka Municipality</h4>
+        </div>
+    </footer>
+    <div class="footer">
+        <p>&copy; All Rights Reserved. Tumi Medical Institute</p>
+    </div>
+</body>
+</html>
